@@ -1,0 +1,21 @@
+﻿* {
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content:center;
+}
+
+.contact_mail {
+    margin: 0;
+    padding: 1em;
+}
+   main img
+     {
+        margin-left: 25em;
+        width: 150px;
+    }

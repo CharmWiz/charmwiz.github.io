@@ -1,0 +1,27 @@
+#progress_div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(95vh - 6em);
+    width: 100%;
+    vertical-align: central;
+}
+
+    #progress_div .game_logo img {
+        height: 300px;
+        width: 300px;
+    }
+
+    #progress_div .progress_bar {
+        border-width: 2px;
+        border-style: inset;
+        width: 30%;
+        height: 30px;
+    }
+
+        #progress_div .progress_bar .progress_bar_content {
+            background: #85EB6A;
+            height: 100%;
+        }

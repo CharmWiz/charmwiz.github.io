@@ -1,0 +1,211 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+}
+
+.unity_fullscreen {
+    margin: 0 3em 0 0;
+    width: 38px;
+}
+
+#fullscreen {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0px #ffffff, -2px -2px 2px 0px #ffffff; 
+}
+
+aside.left_aside {
+    width: 150px;
+}
+
+main {
+    position: absolute;
+    top: 4em;
+    left: 150px;
+    flex: 1;
+    flex-direction: column;
+    width: calc(100% - 160px);
+}
+
+figure img {
+    display: inline-block;
+    vertical-align: central;
+}
+
+figure figcaption {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+article#tool, article#description, article#help, article#gallery {
+    min-height: calc(95vh - 6em);
+    flex: 1;
+    margin: 0 0 1em 0;
+    padding: 2px 2px 2px 2px;
+}
+
+article#description, article#help, article#gallery {
+    background: #63AFD0;
+}
+
+article#tool {
+    max-height: calc(95vh - 6em);
+    align-self: stretch;
+    min-width: 900px;
+    box-shadow: 3px 3px 5px 0px #ffffff, -3px -3px 5px 0px #ffffff;
+}
+
+canvas, #gameContainer {
+    min-width: 800px;
+    min-height: 550px;
+    width: 100%;
+    height: calc(95vh - 6em);
+}
+
+h1 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+h3 {
+    padding: 0.2em 1em 0.2em 1em;
+    margin: 0;
+}
+
+.headline {
+    padding: 0.2em 2em 0.2em 2em;
+    margin: 0;
+    vertical-align: middle;
+}
+
+article#description .headline,
+article#description h3 {
+    background: #FFBD73;
+}
+
+.metagraph_logo 
+{ display:inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    vertical-align: middle;
+}
+
+article#description .example_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.graphical_example {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin:0;
+    padding:0;
+}
+
+article#description div,
+article#help div,
+article#gallery div {
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0;
+}
+
+article#description figure,
+article#help .panels_description figure {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    padding: 0.3em;
+    margin: 0.5em;
+}
+
+
+article#description .example figure {
+    width: 200px;
+    height: 300px;
+}
+
+    article#description .example figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+article#description figure figcaption {
+    align-self: center;
+    padding:0;
+    margin:0;
+}
+
+article#help .headline,
+article#help h3 {
+    background: #85EB6A;
+}
+
+article#help table.table_instructions {
+    border: 1px;
+    padding: 1em;
+}
+
+    article#help table.table_instructions td,
+    article#help .panels_description figure,
+    article#help .panels_description figcaption {
+        border-style: inset;
+        border-width: 2px;
+        border-color: #1D8B00;
+        padding: 5px;
+    }
+
+article#help .button_img {
+    height: 50px;
+}
+
+article#help .small_button_img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+article#help .panels_description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    article#help .panels_description figcaption {
+        padding: 0.2em;
+        height: 4em;
+    }
+
+    article #help .panels_description figure .left_panel_img {
+        width: 200px;
+    }
+
+    article#help .panels_description figure .right_panel_img {
+        width: 100px;
+    }
+
+article #gallery {
+    margin-bottom: 4em;
+}
+
+    article#gallery .headline {
+        background: #FA7081;
+    }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+}

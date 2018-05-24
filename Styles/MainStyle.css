@@ -1,0 +1,127 @@
+body, header, menu, .middle, main, .project_image, footer {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 98vh;
+    background: #024A68;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_logo {
+    width: 250px;
+    padding: 0em 3em 1em 5em;
+}
+
+header {
+    background: #3BA3D0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+    header menu {
+        flex: 1;
+    }
+
+    header .logo {
+        padding: 0 3em 0 3em;
+    }
+
+        header .logo img {
+            width: 100px;
+        }
+
+.current_project_name {
+    display: inline-block;
+    color: #ffffff;
+    padding: 0;
+    margin: 0 2em 0 2em;
+    vertical-align: middle;
+}
+
+menu, footer {
+    background: #3BA3D0;
+}
+
+menu {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    menu a {
+        text-decoration: none;
+        padding: 1em 2em 1em 2em;
+        color: white;
+        font-weight: bold;
+    }
+
+        menu a:hover {
+            background: #FA3E54;
+        }
+
+.middle {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: stretch;
+}
+
+.leftMenu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 200px;
+    list-style-type: none;
+}
+
+    .leftMenu a {
+        background: #3BA3D0;
+        padding: 1em;
+        margin: 1em;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        box-shadow: -20px 0px 0px -15px #FA3E54, 3px 3px 10px 0px #FFA540, -18px 5px 10px -15px #000000;
+    }
+
+        .leftMenu a:hover {
+            background: #FA3E54;
+        }
+
+        .leftMenu a:target {
+            background: #FA3E54;
+        }
+
+footer {
+    padding: 0.2em 4em 0.2em 1em;
+    justify-content: flex-end;
+}
+
+.mail img {
+    margin-right: 3em;
+    width: 50px;
+    height: 35px;
+}
+
+    .mail img:hover {
+        background: #0f56ff;
+    }
