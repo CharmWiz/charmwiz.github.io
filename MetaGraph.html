@@ -1,9 +1,24 @@
 ﻿<!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMZV2SFQ12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-HMZV2SFQ12');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="Shtogrina Elena, charmwiz, graph, metagraph, vertex, metavertex, visualization, graphical representation, layout">
+    <meta name="keywords"
+          content="Shtogrina Elena, charmwiz, graph, metagraph, vertex, metavertex, visualization, graphical representation, layout">
     <title>CharmWiz</title>
     <link rel="shortcut icon" href="Images/MetaGraph/MetaGraphLogo.png">
     <link rel="stylesheet" href="Styles/MainStyle.css">
@@ -14,342 +29,360 @@
     <script src="Scripts/UnityProgress.js"></script>
     <script src="Projects/MetaGraphBuild/UnityLoader.js"></script>
     <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Projects/MetaGraphBuild/MetaGraph.json", { onProgress: UnityProgress });
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Projects/MetaGraphBuild/MetaGraph.json", {onProgress: UnityProgress});
     </script>
-
-    <!--Global site tag(gtag.js) - Google Analytics-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119523661-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-119523661-1');
-    </script>
-
 </head>
 <body>
-    <header id="header">
-        <div class="logo">
-            <a href="index.html"> <img src="Images/CharmWizLogoWhite.svg" alt="Logo" /></a>
-        </div>
-        <div class="current_project_name"><h2>MetaGraph</h2></div>
-        <menu>
-            <!--<a href="#">Home</a>-->
-            <!--<a href="#">About</a>-->
+<header id="header">
+    <div class="logo">
+        <a href="index.html"> <img src="Images/CharmWizLogoWhite.svg" alt="Logo"/></a>
+    </div>
+    <div class="current_project_name"><h2>MetaGraph</h2></div>
+    <menu>
+        <!--<a href="#">Home</a>-->
+        <!--<a href="#">About</a>-->
 
-            <a href="index.html">Projects</a>
-            <a href="Contacts.html">Contacts</a>
-        </menu>
-        <div class="unity_fullscreen">
-            <img id="fullscreen" src="Images/MetaGraph/Unity/fullscreen.png" onclick="gameInstance.SetFullscreen(1)" />
-        </div>
-    </header>
+        <a href="index.html">Projects</a>
+        <a href="Contacts.html">Contacts</a>
+    </menu>
+    <div class="unity_fullscreen">
+        <img id="fullscreen" src="Images/MetaGraph/Unity/fullscreen.png" onclick="gameInstance.SetFullscreen(1)"/>
+    </div>
+</header>
 
-    <div class="middle">
-        <aside class="left_aside">d</aside>
-        <main>
-            <aside class="leftMenu">
-                <a href="#tool">Tool</a>
-                <a href="#description">Description</a>
-                <a href="#help">Help</a>
-                <a href="#gallery">Gallery</a>
-            </aside>
-            <div> <br /></div>
-            <article id="tool">
-                <div id="progress_div">
-                    <div class="game_logo"><img src="Images/MetaGraph/MetaGraphLogo.png" /></div>
-                    <div class="progress_bar">
-                        <div class="progress_bar_content"></div>
-                    </div>
-                    <div class="full"></div>
+<div class="middle">
+    <aside class="left_aside">d</aside>
+    <main>
+        <aside class="leftMenu">
+            <a href="#tool">Tool</a>
+            <a href="#description">Description</a>
+            <a href="#help">Help</a>
+            <a href="#gallery">Gallery</a>
+        </aside>
+        <div><br/></div>
+        <article id="tool">
+            <div id="progress_div">
+                <div class="game_logo"><img src="Images/MetaGraph/MetaGraphLogo.png"/></div>
+                <div class="progress_bar">
+                    <div class="progress_bar_content"></div>
                 </div>
-                <div id="gameContainer"></div>
-            </article>
+                <div class="full"></div>
+            </div>
+            <div id="gameContainer"></div>
+        </article>
 
-            <article id="description">
-                <div class="headline">
-                    <table>
-                        <tr>
-                            <td><img class="metagraph_logo" src="Images/MetaGraph/MetaGraphLogo.png" />
-                            <td><h1>  Description </h1></td>
-                        </tr>
-                    </table>
-                </div>
+        <article id="description">
+            <div class="headline">
+                <table>
+                    <tr>
+                        <td><img class="metagraph_logo" src="Images/MetaGraph/MetaGraphLogo.png"/>
+                        <td><h1> Description </h1></td>
+                    </tr>
+                </table>
+            </div>
 
-                <div>
-                    Project represents <b>automatic metagraph visualization</b> based on the principles of force-directed algorithms.<br />
-                    Also you can create your own metagraph with this tool.
-                    <br /><br />
-                    <i> Definition </i>. <b><i>Metagraph</i></b> is a construct S = &ltV, M, E&gt, where <br />
-                    V - set of metagraph vertices, <br />
-                    M - set of metavertices, <br />
-                    E - set of edges. <br /><br />
+            <div>
+                Project represents <b>automatic metagraph visualization</b> based on the principles of force-directed
+                algorithms.<br/>
+                Also you can create your own metagraph with this tool.
+                <br/><br/>
+                <i> Definition </i>. <b><i>Metagraph</i></b> is a construct S = &ltV, M, E&gt, where <br/>
+                V - set of metagraph vertices, <br/>
+                M - set of metavertices, <br/>
+                E - set of edges. <br/><br/>
 
-                    <b><i>Metavertex</i></b> is a vertex that includes some other vertices that called inner vertices for this metavertex.<br />
-                    Metagraph <b><i>node</i></b> is a vertex or a metavertex.<br />
-                    Metagraph <b><i>edge</i></b> is oriented pair of vertices e(mv_out, mv_in),
-                    where mv_out - tail, mv_in - head.<br />
-                    <br />
-                    <b>The graphical representation</b> is calculated and placed inside the rectangular area.
-                    The graphical representation is <b>correct</b> if it corresponds to the analytical.<br />
-                    The node have incorrect coordinates when it does not include in metavertex, but lies in figure of this metavertex.
-                    That nodes are marked in red.
-                    <div class="example">
-                        <h3>Example</h3>
-                        <div class="example_content">
-                            <div>
-                                <h4>Metagraph Analytical representation</h4>
-                                V = { v1, v2, v3, v4, v5 }<br />
-                                M = { m1 }, where m1 = { v3, v4, v5 }<br />
-                                E = { e1, e2 }, where  e1 = (v1, v2), e2 = (v2, v5)<br /><br />
-                            </div>
-                            <div>
-                                <h4>Metagraph Text representation</h4>
-                                Nodes<br />
-                                [<br />
-                                v1 (19, 32, 0) {};<br />
-                                v2 ( 7, 26, 0) {};<br />
-                                v3 ( 6, 16, 0) {};<br />
-                                v4 (10,  4, 0) {};<br />
-                                v5 (21, 22, 0) {};<br />
-                                m1 (13, 14, 3) {v3, v4, v5};<br />
-                                ]<br />
+                <b><i>Metavertex</i></b> is a vertex that includes some other vertices that called inner vertices for
+                this metavertex.<br/>
+                Metagraph <b><i>node</i></b> is a vertex or a metavertex.<br/>
+                Metagraph <b><i>edge</i></b> is oriented pair of vertices e(mv_out, mv_in),
+                where mv_out - tail, mv_in - head.<br/>
+                <br/>
+                <b>The graphical representation</b> is calculated and placed inside the rectangular area.
+                The graphical representation is <b>correct</b> if it corresponds to the analytical.<br/>
+                The node have incorrect coordinates when it does not include in metavertex, but lies in figure of this
+                metavertex.
+                That nodes are marked in red.
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example_content">
+                        <div>
+                            <h4>Metagraph Analytical representation</h4>
+                            V = { v1, v2, v3, v4, v5 }<br/>
+                            M = { m1 }, where m1 = { v3, v4, v5 }<br/>
+                            E = { e1, e2 }, where e1 = (v1, v2), e2 = (v2, v5)<br/><br/>
+                        </div>
+                        <div>
+                            <h4>Metagraph Text representation</h4>
+                            Nodes<br/>
+                            [<br/>
+                            v1 (19, 32, 0) {};<br/>
+                            v2 ( 7, 26, 0) {};<br/>
+                            v3 ( 6, 16, 0) {};<br/>
+                            v4 (10, 4, 0) {};<br/>
+                            v5 (21, 22, 0) {};<br/>
+                            m1 (13, 14, 3) {v3, v4, v5};<br/>
+                            ]<br/>
 
-                                Edges<br />
-                                [<br />
-                                e1 (v1, v2);<br />
-                                e2 (v2, v5);<br />
-                                ]<br />
-                            </div>
-                            <div class="graphical_example">
-                                <p>
-                                    <h4>Metagraph Graphical representation</h4>
-                                    Picture of incorrect graphical representation shows example when analytical representation doesn't correspond to the graphical representation:<br />
-                                    v1 does not include in m1, but at the picture it does.
-                                </p>
-                                <figure>
-                                    <img src="Images/MetaGraph/CorrectGraphicalRepresentation.PNG" />
-                                    <figcaption>Correct graphical representation</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="Images/MetaGraph/IncorrectGraphicalRepresentation.PNG" />
-                                    <figcaption>Incorrect graphical representation<br /></figcaption>
-                                </figure>
-                            </div>
+                            Edges<br/>
+                            [<br/>
+                            e1 (v1, v2);<br/>
+                            e2 (v2, v5);<br/>
+                            ]<br/>
+                        </div>
+                        <div class="graphical_example">
+                            <p>
+                            <h4>Metagraph Graphical representation</h4>
+                            Picture of incorrect graphical representation shows example when analytical representation
+                            doesn't correspond to the graphical representation:<br/>
+                            v1 does not include in m1, but at the picture it does.
+                            </p>
+                            <figure>
+                                <img src="Images/MetaGraph/CorrectGraphicalRepresentation.PNG"/>
+                                <figcaption>Correct graphical representation</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="Images/MetaGraph/IncorrectGraphicalRepresentation.PNG"/>
+                                <figcaption>Incorrect graphical representation<br/></figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article id="help">
-                <div class="headline">
-                    <table>
-                        <tr>
-                            <td><img class="metagraph_logo" src="Images/MetaGraph/MetaGraphLogo.png" />
-                            <td><h1>  Instruction </h1></td>
-                        </tr>
-                    </table>
-                </div>
+        <article id="help">
+            <div class="headline">
+                <table>
+                    <tr>
+                        <td><img class="metagraph_logo" src="Images/MetaGraph/MetaGraphLogo.png"/>
+                        <td><h1> Instruction </h1></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Description of buttons</h3>
+                <table class="table_instructions">
+                    <tr>
+                        <td><img class="small_button_img" src="Images/MetaGraph/Buttons/LinkButton.PNG"
+                                 alt="Link Button"/></td>
+                        <td>Navigates (selects) to the metagraph's element (node or edge).</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/ClearMetaGraph.png"
+                                 alt="Clear MetaGraph Button"/></td>
+                        <td>Clears the area by deleting all elements of the metagraph.</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/TextRepresentation.png"
+                                 alt="Text Representation Button"/></td>
+                        <td>
+                            Shows panel for the metagraph text representation.<br/>
+                            <img class="small_button_img" src="Images/MetaGraph/Buttons/MGToText.PNG"
+                                 alt="Metagraph To Text Button"/>
+                            Represents the metagraph in the text.<br/>
+                            <img class="small_button_img" src="Images/MetaGraph/Buttons/TextToMG.PNG"
+                                 alt="Text TO Metagraph Button"/>
+                            Generate the metagraph from the text. <i>Note.</i>Existed metagraph will be deleted.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/AddNode.png" alt="Add Node Button"/>
+                        </td>
+                        <td>
+                            After clicking on this button, each click on the area will create a new node with
+                            coordinates of the pointer. <br/>
+                            Click on the button again to stop creating nodes.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/AddEdge.png" alt="Add Edge Button"/>
+                        </td>
+                        <td>
+                            To create an edge:<br/>
+                            1) select first node;<br/>
+                            2) click this button;<br/>
+                            3) select second node.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/IncludeNode.png"
+                                 alt="Include Node Button"/></td>
+                        <td>
+                            To include a vertex in a metavertex:<br/>
+                            1) select a vertex;<br/>
+                            2) click this button;<br/>
+                            3) select a metavertex.<br/>
+                            <i>Note.</i> You can not include a metavertex in a metavertex. Only - a vertex in a
+                            metavertex. <br/>
+                            Also, you can not include a vertex to another vertex that has included already.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/ExcludeNode.png"
+                                 alt="Exclude Node Button"/></td>
+                        <td>
+                            To exclude a vertex from a metavertex:<br/>
+                            1) select a vertex;<br/>
+                            2) click this button;<br/>
+                            3) select a metavertex that includes the selected vertex.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/DeleteElement.png"
+                                 alt="Delete Element Button"/></td>
+                        <td>To delete a metagraph's element (node or edge) select it and click this button.</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/RunVisualization.png"
+                                 alt="Run Visualization Button"/></td>
+                        <td>
+                            Starts the graph visualization process (new coordinates of nodes are calculated).<br/>
+                            <i>Note.</i>This process may take some time, because the complexity of the visualization
+                            algorithm O(n<sup>2</sup>).
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/Configuration.png"
+                                 alt="Configuration Button"/></td>
+                        <td> Shows configuration panel for visualization or randomization.</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/EnableCaptions.PNG"
+                                 alt="Enable Captions Button"/></td>
+                        <td> Shows or hides captions of nodes/edges.</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/GenerateRandomMetaGraph.png"
+                                 alt="Generate Random MetaGraph Button"/></td>
+                        <td>
+                            Generate new random metagraph.<br/>
+                            <i>Note.</i>Existed metagraph will be deleted.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/RandomizeNodesColor.png"
+                                 alt="Randomize Nodes Color Button"/></td>
+                        <td>Sets a new random color for each node.</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="button_img" src="Images/MetaGraph/Buttons/RandomizeNodesCoordinates.png"
+                                 alt="Randomize Nodes Coordinates Button"/></td>
+                        <td>Sets a new random coordinates for each node.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <h3>Text representation</h3>
                 <div>
-                    <h3>Description of buttons</h3>
-                    <table class="table_instructions">
-                        <tr>
-                            <td><img class="small_button_img" src="Images/MetaGraph/Buttons/LinkButton.PNG" alt="Link Button" /></td>
-                            <td>Navigates (selects) to the metagraph's element (node or edge).</td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/ClearMetaGraph.png" alt="Clear MetaGraph Button" /></td>
-                            <td>Clears the area by deleting all elements of the metagraph.</td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/TextRepresentation.png" alt="Text Representation Button" /></td>
-                            <td>
-                                Shows panel for the metagraph text representation.<br />
-                                <img class="small_button_img" src="Images/MetaGraph/Buttons/MGToText.PNG" alt="Metagraph To Text Button" />
-                                Represents the metagraph in the text.<br />
-                                <img class="small_button_img" src="Images/MetaGraph/Buttons/TextToMG.PNG" alt="Text TO Metagraph Button" />
-                                Generate the metagraph from the text. <i>Note.</i>Existed metagraph will be deleted.
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/AddNode.png" alt="Add Node Button" /></td>
-                            <td>
-                                After clicking on this button, each click on the area will create a new node with coordinates of the pointer. <br />
-                                Click on the button again to stop creating nodes.
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/AddEdge.png" alt="Add Edge Button" /></td>
-                            <td>
-                                To create an edge:<br />
-                                1) select first node;<br />
-                                2) click this button;<br />
-                                3) select second node.
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/IncludeNode.png" alt="Include Node Button" /></td>
-                            <td>
-                                To include a vertex in a metavertex:<br />
-                                1) select a vertex;<br />
-                                2) click this button;<br />
-                                3) select a metavertex.<br />
-                                <i>Note.</i> You can not include a metavertex in a metavertex. Only - a vertex in a metavertex. <br />
-                                Also, you can not include a vertex to another vertex that has included already.
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/ExcludeNode.png" alt="Exclude Node Button" /></td>
-                            <td>
-                                To exclude a vertex from a metavertex:<br />
-                                1) select a vertex;<br />
-                                2) click this button;<br />
-                                3) select a metavertex that includes the selected vertex.
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/DeleteElement.png" alt="Delete Element Button" /></td>
-                            <td>To delete a metagraph's element (node or edge) select it and click this button.</td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/RunVisualization.png" alt="Run Visualization Button" /></td>
-                            <td>
-                                Starts the graph visualization process (new coordinates of nodes are calculated).<br />
-                                <i>Note.</i>This process may take some time, because the complexity of the visualization algorithm O(n<sup>2</sup>).
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/Configuration.png" alt="Configuration Button" /></td>
-                            <td> Shows configuration panel for visualization or randomization.</td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/EnableCaptions.PNG" alt="Enable Captions Button" /></td>
-                            <td> Shows or hides captions of nodes/edges.</td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/GenerateRandomMetaGraph.png" alt="Generate Random MetaGraph Button" /></td>
-                            <td>
-                                Generate new random metagraph.<br />
-                                <i>Note.</i>Existed metagraph will be deleted.
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/RandomizeNodesColor.png" alt="Randomize Nodes Color Button" /></td>
-                            <td>Sets a new random color for each node.</td>
-                        </tr>
-
-                        <tr>
-                            <td><img class="button_img" src="Images/MetaGraph/Buttons/RandomizeNodesCoordinates.png" alt="Randomize Nodes Coordinates Button" /></td>
-                            <td>Sets a new random coordinates for each node.</td>
-                        </tr>
-                    </table>
+                    <b>Nodes []</b> - contains nodes description. <br/>
+                    <b>Edges []</b>- contains edges descriptions. <br/>
+                    <br/>
+                    Description of a particular node: <br/>
+                    <b>
+                        <i> caption (coordinates) {included nodes};</i>
+                    </b><br/>
+                    (example of vertex description: v1 (19, 32, 0) {};)<br/>
+                    (example of metavertex description: m1 (13, 14, 3) {v3, v4, v5};)<br/>
+                    <br/>
+                    Description of a particular edge: <br/>
+                    <b><i>caption (mv_out_Caption, mv_in_Caption)</i></b><br/>
+                    (example: e1 (v1, v2);)<br/>
                 </div>
+            </div>
 
-                <div>
-                    <h3>Text representation</h3>
-                    <div>
-                        <b>Nodes []</b> - contains nodes description. <br />
-                        <b>Edges []</b>- contains edges descriptions. <br />
-                        <br />
-                        Description of a particular node: <br />
-                        <b>
-                            <i> caption (coordinates) {included nodes};</i>
-                        </b><br />
-                        (example of vertex description: v1 (19, 32, 0) {};)<br />
-                        (example of metavertex description: m1 (13, 14, 3) {v3, v4, v5};)<br />
-                        <br />
-                        Description of a particular edge: <br />
-                        <b><i>caption (mv_out_Caption, mv_in_Caption)</i></b><br />
-                        (example: e1 (v1, v2);)<br />
-                    </div>
+            <div>
+                <h3>Panels</h3>
+                <div> Panels are designed to display and edit the properties of tool's objects and configurations.</div>
+                <div class="panels_description">
+                    <figure>
+                        <figcaption>
+                            Demonstrates the properties of the vertex.
+                        </figcaption>
+                        <img class="left_panel_img" src="Images/MetaGraph/Panels/VertexPanel.PNG" alt="Vertex Panel"/>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            Demonstrates the properties of the metavertex.
+                        </figcaption>
+                        <img class="left_panel_img" src="Images/MetaGraph/Panels/MetaVertexPanel.PNG"
+                             alt="Metavertex Panel"/>
+                    </figure>
+
+                    <figure>
+                        <figcaption>
+                            Demonstrates the properties of the edge.
+                        </figcaption>
+                        <img class="left_panel_img" src="Images/MetaGraph/Panels/EdgePanel.PNG" alt="Edge Panel"/>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            Demonstrates all elements of metagraph (nodes and edges).
+                        </figcaption>
+                        <img class="right_panel_img" src="Images/MetaGraph/Panels/MetagraphPanel.PNG"
+                             alt="Metagraph Panel"/>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            Demonstrates the configuration for visualization area.
+                        </figcaption>
+                        <img class="left_panel_img" src="Images/MetaGraph/Panels/VisualizationAreaPanel.PNG"
+                             alt="Visualization Area Panel"/>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            Demonstrates the configuration for visualization area.
+                        </figcaption>
+                        <img class="left_panel_img" src="Images/MetaGraph/Panels/VisualizationCoefficientsPanel.PNG"
+                             alt="Visualization Coefficients Panel"/>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            Demonstrates the configuration for generate random metagraph.
+                        </figcaption>
+                        <img class="left_panel_img" src="Images/MetaGraph/Panels/RandomizatorPanel.PNG"
+                             alt="Randomizator Panel"/>
+                    </figure>
                 </div>
+            </div>
+        </article>
 
-                <div>
-                    <h3>Panels</h3>
-                    <div>  Panels are designed to display and edit the properties of tool's objects and configurations.</div>
-                    <div class="panels_description">
-                        <figure>
-                            <figcaption>
-                                Demonstrates the properties of the vertex.
-                            </figcaption>
-                            <img class="left_panel_img" src="Images/MetaGraph/Panels/VertexPanel.PNG" alt="Vertex Panel" />
-                        </figure>
-                        <figure>
-                            <figcaption>
-                                Demonstrates the properties of the metavertex.
-                            </figcaption>
-                            <img class="left_panel_img" src="Images/MetaGraph/Panels/MetaVertexPanel.PNG" alt="Metavertex Panel" />
-                        </figure>
-
-                        <figure>
-                            <figcaption>
-                                Demonstrates the properties of the edge.
-                            </figcaption>
-                            <img class="left_panel_img" src="Images/MetaGraph/Panels/EdgePanel.PNG" alt="Edge Panel" />
-                        </figure>
-                        <figure>
-                            <figcaption>
-                                Demonstrates all elements of metagraph (nodes and edges).
-                            </figcaption>
-                            <img class="right_panel_img" src="Images/MetaGraph/Panels/MetagraphPanel.PNG" alt="Metagraph Panel" />
-                        </figure>
-                        <figure>
-                            <figcaption>
-                                Demonstrates the configuration for visualization area.
-                            </figcaption>
-                            <img class="left_panel_img" src="Images/MetaGraph/Panels/VisualizationAreaPanel.PNG" alt="Visualization Area Panel" />
-                        </figure>
-                        <figure>
-                            <figcaption>
-                                Demonstrates the configuration for visualization area.
-                            </figcaption>
-                            <img class="left_panel_img" src="Images/MetaGraph/Panels/VisualizationCoefficientsPanel.PNG" alt="Visualization Coefficients Panel" />
-                        </figure>
-                        <figure>
-                            <figcaption>
-                                Demonstrates the configuration for generate random metagraph.
-                            </figcaption>
-                            <img class="left_panel_img" src="Images/MetaGraph/Panels/RandomizatorPanel.PNG" alt="Randomizator Panel" />
-                        </figure>
-                    </div>
-                </div>
-            </article>
-
-            <article id="gallery">
-                <div class="headline">
-                    <table>
-                        <tr>
-                            <td><img class="metagraph_logo" src="Images/MetaGraph/MetaGraphLogo.png" />
-                            <td><h1>  Gallery </h1></td>
-                        </tr>
-                    </table>
-                </div>
-            </article>
-            <article>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-            </article>
-        </main>
-    </div>
-    <footer>
-        <a class="mail" href="mailto:charmwizdev@gmail.com">
-            <img src="Images/Mail.svg" />
-        </a>
-    </footer>
+        <article id="gallery">
+            <div class="headline">
+                <table>
+                    <tr>
+                        <td><img class="metagraph_logo" src="Images/MetaGraph/MetaGraphLogo.png"/>
+                        <td><h1> Gallery </h1></td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <article>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </article>
+    </main>
+</div>
+<footer>
+    <a class="mail" href="mailto:charmwizdev@gmail.com">
+        <img src="Images/Mail.svg"/>
+    </a>
+</footer>
 </body>
 </html>
